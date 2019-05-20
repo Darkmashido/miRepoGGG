@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!--<link rel="stylesheet" href="/loginCSS.css">-->
+  <script src="angular.js"></script>
+  <script src="angular-touch.js"></script>
+  <script src="angular-animate.js"></script>
+  <script src="angular-aria.js"></script>
+  <script src="ui-grid.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="fontello.css">
+  <script src="ui-bootstrap-tpls-2.5.0.js"></script>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-nav.navbar-center {
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+    }
+  </style>
+</head>
+
+<body style="padding-top:20px;background-color: #F3F3F4;" ng-controller="appController">
+  
+<div class="navegacion">
+  <nav>
+    <ul>
+      <li><a href="">Inicio1<span class="icon icon-up-dir"></span></a></li>
+      <li><a href="">Inicio2<span class="icon icon-up-dir"></span></a></li>
+      <li><a href="">Inicio3<span class="icon icon-up-dir"></span></a></li>
+      <li><a href="">Inicio4<span class="icon icon-up-dir"></span></a></li>
+    </ul>
+  </nav>
+</div>
+
+  <div class="panel panel-primary ng-scope" style="width: 70%; margin: auto">
+    <div class="panel-heading">
+      <h4>Cargar Marca</h4>
+    </div>
+    <div class="panel-body">
+      <form method="post" class="form-inline" action="http://localhost:4567/marca" id="crear"
+        enctype='application/json'>
+        <div class="form-group col-md-8">
+          <label for="nro-documento">Ingrese Marca</label>
+          <input type="text" class="form-control" placeholder="Ingrese descripción de la marca" name="nro-documento-nf"
+            name="descripcion" autofocus="" ng-model="vm.chequeSinFirmantes.nroCuenta" size="30">
+          <button type="submit" ng-disabbled="true" class="btn btn-primary mb-2" value="Aceptar">Aceptar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--pop up inexistente-->
+</body>
+
+</html>

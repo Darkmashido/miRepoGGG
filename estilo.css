@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navegacion > nav > ul > li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4em;
+}
+.navegacion{
+    width: 100%;
+}
+.navegacion > nav{
+    width: 90%;
+    max-width: 1100px;
+    background: #2d3447;
+    margin: 2em auto;
+}
+.navegacion > nav > ul{
+    list-style: none;
+    position: relative;
+}
+.navegacion > nav > ul > li{
+    display: inline-block;
+}
+.navegacion > nav > ul > li > a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+.navegacion > nav > ul > li > a  span{
+    font-size: 1.2em;
+    position: absolute;
+    bottom: -.5em;
+    display: none;
+}
+.navegacion > nav > ul > li:hover span{
+    display: block;
+    transition: display .5s;
+}
